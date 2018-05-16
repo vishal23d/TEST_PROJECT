@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0,minimum-scale=1.0"/>
+    <style type="text/css">
+        body {
+            -webkit-text-size-adjust: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://lokeshdhakar.com/projects/lightbox2/css/lightbox.css">
+    <style>
+        .no-padding{padding:0px;}
+
+        .outer-block {
+            padding-top: 100px;
+        }
+
+        .customa {
+            border: 1px solid red;
+        }
+
+        #lightTrigger {
+            padding: 5px 10px;
+            border: 1px solid #eee;
+            display: block;
+        }
+
+        #lightbox .lb-outerContainer {
+            height: 400px !important;
+            width: 400px !important;
+        }
+
+        #lightbox .lb-container > img {
+            height: 400px !important;
+            width: 400px !important;
+            max-width: 100%;
+        }
+
+        #lightbox .lb-data .lb-caption{
+            font-size: 20px;
+        }
+
+        map[name='lcf-map']{position:absolute;left:0;top:0;width:100%;height:100%;}
+
+        .mapimage{}
+
+        .mfp-block{float:none;margin:0px auto;}
+
+        area.areat{fill: #00628B; fill-color:#00628B; ; fill-opacity: 1;stroke: #7d00cd; -webkit-text-stroke-color: #7ca8d3;}
+    </style>
+    <script src="mfp.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <div class="container">
+
+        <div class="outer-block col-md-12 no-padding hide">
+
+            <div class="map-block col-md-12 no-padding">
+                <a id="lightTrigger" class="example-image-link" href="" data-lightbox="example-set"
+                   data-title=""></a>
+                <img src="images/maxresdefault-825x542.jpg" alt="map_image" width="825" height="542" usemap="#cities">
+            </div><!--MAP-BLOCK-->
+
+            <map name="cities">
+                <area target="" alt="SUN" title="SUN" href="#nogo" data-src="images/spec1.jpg"
+                      coords="512,74,518,81,510,90,516,92,514,99,520,103,519,114,524,111,527,119,533,120,537,115,543,122,549,118,557,118,558,110,567,114,567,106,572,103,575,94,575,84,577,76,569,69,570,61,559,62,556,52,545,55,534,58,518,65,523,56,528,59"
+                      shape="poly">
+
+                <area target="" alt="LOTUS TEMPLE" title="LOTUS TEMPLE" href="#nogo" data-src="images/spec2.jpg"
+                      coords="94,530,91,525,97,517,98,510,98,503,101,499,77,472,110,462,106,444,113,441,120,440,126,440,134,440,119,417,127,412,135,412,144,411,151,412,159,414,168,417,173,421,179,425,188,430,197,436,202,429,206,422,213,416,220,414,225,410,230,407,237,406,248,403,265,423,269,417,280,410,288,403,296,399,303,397,308,394,304,404,300,408,296,414,298,420,305,419,318,430,316,423,322,434,317,439,217,480"
+                      shape="poly">
+
+                <area target="" alt="BUILDING" title="BUILDING WITH ONE LIGHT" href="#nogo" data-src="images/spec3.jpg"
+                      coords="325,389,326,360,334,358,334,268,384,268,404,280,402,384" shape="poly">
+
+                <area target="" alt="HIGHEST TOWER" title="HIGHEST TOWER" href="#nogo" data-src="images/spec4.jpg"
+                      coords="559,397,577,350,616,185,622,180,628,178,639,175,669,102,662,180,674,195,675,204,672,217,645,343,641,354,633,418"
+                      shape="poly">
+
+                <area target="" alt="BROWN TOWER" title="BROWN TOWER" href="#nogo" data-src="images/spec5.jpg"
+                      coords="364,268,365,176,392,177,392,145,407,145,407,137,418,108,433,138,431,146,442,155,443,183,464,193,465,221,475,223,473,263,490,270,490,355,511,355,513,391,491,388,470,388,438,386,404,384,406,278,388,270"
+                      shape="poly">
+            </map>
+
+        </div><!--OUTER-BLOCK-->
+
+        <div class="mfp-block outer-block col-md-5 no-padding">
+
+            <div class="map-block col-md-12 no-padding">
+
+
+                <div id="divMFPImg" class="mapimage col-md-12 no-padding" style="" usemap="mfps">
+                    <div style="position:absolute; left:57px; top:82px; z-index:1;">
+                        <img id="imgFinisher_id" src="images/Alabama_OutputTray.gif" width="78" height="119" usemap="finisher-map">
+                    </div>
+
+                    <map name="finisher-map">
+                        <area target="" alt="" title="Alabama Output Tray" data-src="images/Alabama_OutputTray.gif" href="#NOGO" coords="78,32,42,14,52,13,77,25,78,13,67,8,78,5" shape="poly">
+                    </map>
+
+                    <div style="position:absolute; left:108px; top:40px;">
+                        <img id="imgTray_id" src="images/Alabama_PPC_LCF.gif" width="140" height="160" usemap="lcf-map">
+                    </div>
+
+                    <map name="lcf-map">
+                        <area target="" alt="Alabama PPC Large Capacity Feeder" title="ALABAMA PPC LARGE CAPACITY FEEDER" data-src="images/Alabama_PPC_Large_Capacity_Feeder.gif" href="#nogo" coords="26,107,104,157" shape="rect">
+
+                        <area target="" alt="Alabama PPC LCF DUPLEXER" title="ALABAMA PPC LCF Duplexer" data-src="images/Alabama_PPC_LCF_Duplexer.gif" href="#nogo" coords="104,57,116,107" shape="rect">
+
+                        <area target="" alt="Alabama PPC LCF TONER" title="ALABAMA PPC LCF TONER" onmouseover="this.style.backgroundColor='#000';"  fill="#000" data-src="images/Alabama_PPC_LCF_Toner.gif" href="#nogo" coords="27,73,104,107" shape="rect">
+
+                        <area target="" alt="Alabama PPC LCF CONVEYOR" title="ALABAMA PPC LCF Conveyor" data-src="images/Alabama_PPC_LCF_Conveyor.gif" href="#nogo" coords="116,99,138,105" shape="rect">
+
+                        <area target="" alt="Alabama PPC LCF PANEL" title="ALABAMA PPC LCF PANEL" data-src="images/Alabama_PPC_LCF_Panel.gif" href="#nogo" coords="60,43,94,51" shape="rect">
+
+                        <area target="" class="areat" rel="tag" color="#00628B" onclick="this.style.backgroundColor='#000';" alt="" title="" href="#nogo" coords="20,20,90,0" shape="rect">
+
+                        <!--<path target="" class="areat" fill="#00628B" rel="tag" onclick="this.style.backgroundColor='#000';" alt="" title="" href="#nogo" coords="20,20,90,0" shape="rect"></path>-->
+
+                    </map>
+
+                </div>
+
+            </div><!--MAP-BLOCK-->
+
+        </div><!--MFP-BLOCK-->
+
+        <div class="newMap container col-md-12"></div>
+
+    </div><!--CONTAINER-->
+
+</div><!--WRAPPER-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://lokeshdhakar.com/projects/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script src="https://www.vincentbroute.fr/mapael/source/js/jquery.mapael.js"></script>
+<script src="mfp.js"></script>
+
+<script>
+    $(function(){
+        //var mySVG=[0,0,338.81787,369.92529,{"stroke-opacity":"1","stroke-linejoin":"miter","stroke":"#000000","stroke-width":"0.26458332px","stroke-linecap":"butt","type":"path",
+        ///"M -64.255951,67.190476 9.8273808,111.03571 9.0714284,92.892855 -36.285715,66.434522 l -3.023809,-1.511903 -3.023809,-0.755952 -8.315476,-1.511906 -1.511905,-1.511906 -6.80357,-0.755951 z","M 10.583333,182.09524 9.8273808,111.03571 v 0 0 0 0 0 L 9.0714284,92.892855 9.8273808,111.03571 v 0 l 152.7023792,-6.80357 -0.75595,75.59524 z","M 10.583333,182.09524 9.8273808,291.70833 164.04166,289.44048 161.77381,179.82738 Z","M 141.36309,54.339286 72.571427,55.095237 71.815475,46.02381 74.083332,32.416668 138.33928,31.660713 Z","m 163.28571,70.214285 -1.5119,109.613095 23.43452,0.75595 -0.75595,-111.88095 10.58333,-1.511904 v -9.827381 l -31.75,-1.511906 z","m 225.27381,163.95238 h -40.82143 l 0.75595,16.63095 40.06548,-4.53571 z","m 74.08333,32.416668 v 0 l 64.25595,-0.755955 v 0 h 61.23214 L 202.59524,-1.6011904 68.791666,1.422619 Z"
+
+        var R = Raphael("container", 750, 750),
+            attr = {
+                "stroke-miterlimit":"4",
+                "stroke-dasharray":"none",
+                "fill":"#000000",
+                "stroke-width":"0.40000001",
+                "fill-opacity":"1",
+                "stroke":"none"
+            },
+            path = "M -64.255951,67.190476 9.8273808,111.03571 9.0714284,92.892855 -36.285715,66.434522 l -3.023809,-1.511903 -3.023809,-0.755952 -8.315476,-1.511906 -1.511905,-1.511906 -6.80357,-0.755951 z","M 10.583333,182.09524 9.8273808,111.03571 v 0 0 0 0 0 L 9.0714284,92.892855 9.8273808,111.03571 v 0 l 152.7023792,-6.80357 -0.75595,75.59524 z";
+    });
+
+    $(document).ready(function () {
+        $(".outer-block map area").on("click", function (eve) {
+            var atr = $(this).attr("data-src"),
+                title = $(this).attr("title");
+            console.log($(this).attr("title"));
+
+            $("#lightTrigger").attr("href", atr).attr("data-title", title);
+            $("#lightTrigger").trigger("click");
+
+        });
+    });
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+var rsr = Raphael('rsr', '300', '300');
+var layer1 = rsr.set();
+
+var path26 = rsr.path("m 73.411433,136.9726 2.455232,51.31435 111.467525,14.97691 c 0,0 3.92837,0.9821 6.38361,0 2.45523,-0.98209 2.70075,-1.96418 2.70075,-1.96418 l -0.49105,-51.06882 z").attr({id: 'path26'}).data('id', 'path26');
+box1.node.setAttribute("data-string", "path26");
+parts.push(path26);
+
+var path28 = rsr.path("m 75.866665,188.28695 0.491046,20.62395 109.012299,15.46796 c 0,0 6.62912,0.98209 8.83883,-0.73657 2.20971,-1.71866 1.47314,-2.45523 1.47314,-2.45523 l 0.73657,-19.88738 c 0,0 -1.96419,3.68284 -9.08436,1.96418 C 180.21402,201.5452 75.866665,188.28695 75.866665,188.28695 Z").data('id', 'path28');
+box1.node.setAttribute("data-string", "path28");
+parts.push(path28);
+
+var path30 = rsr.path("m 76.357711,208.9109 0.982093,23.07918 109.503346,17.43214 c 0,0 6.62912,0.49105 7.85674,-1.71866 1.22761,-2.20971 0.98209,-26.5165 0.98209,-26.5165 0,0 -0.24552,4.41941 -9.08436,3.43732 C 177.75879,223.64229 76.357711,208.9109 76.357711,208.9109 Z").attr({id: 'path30'}).data('id', 'path30');
+box1.node.setAttribute("data-string", "path30");
+parts.push(path30);
+
+var path32 = rsr.path("m 77.339804,231.99008 0.982093,19.39633 105.574973,17.18662 c 0,0 8.10226,0.98209 9.82093,-0.98209 1.71866,-1.96419 1.22761,-19.64186 1.22761,-19.64186 0,0 -1.71865,2.20971 -8.10226,1.47314 -6.38361,-0.73657 -109.503346,-17.43214 -109.503346,-17.43214 z").attr({id: 'path32'}).data('id', 'path32');
+box1.node.setAttribute("data-string", "path32");
+parts.push(path32);
+
+var path34 = rsr.path("m 78.321897,251.38641 v 17.18662 l 106.802583,18.90529 c 0,0 5.89256,1.22761 7.85675,-0.73657 1.96418,-1.96419 1.22761,-1.47314 1.22761,-1.47314 l 0.24552,-17.92319 c 0,0 -1.96418,2.70075 -13.99482,0.49104 C 168.42891,265.62675 78.321897,251.38641 78.321897,251.38641 Z").attr({id: 'path34'}).data('id', 'path34');
+box1.node.setAttribute("data-string", "path34");
+parts.push(path34);
+
+var path36 = rsr.path("m 128.40863,77.924276 -10.18921,16.818339 c 0,0 -2.578,6.260845 4.54217,6.751885 7.12018,0.49105 59.29385,4.91047 59.29385,4.91047 0,0 3.56009,0.49104 4.78771,-3.68285 1.22761,-4.173896 7.12017,-16.81834 7.12017,-16.81834 0,0 0.73657,-2.946278 -1.10486,-3.928371 -1.84142,-0.982093 -2.57799,-1.104854 -2.57799,-1.104854 L 132.70528,76.69666 c 0,0 -3.80561,-0.245523 -4.05113,0.73657 -0.24552,0.982093 -0.24552,0.491046 -0.24552,0.491046 z").attr({id: 'path36'}).data('id', 'path36');
+box1.node.setAttribute("data-string", "path36");
+parts.push(path36);
+
+var path38 = rsr.path("m 162.53635,146.54801 0.61381,-36.82848 c 0,0 -15.83625,-6.50637 -24.3068,-6.99741 -8.47055,-0.49105 -18.90528,-1.71866 -18.90528,-1.71866 0,0 -3.56008,-2.455235 -1.71866,-6.260845 1.84142,-3.80561 -7.73399,10.311975 -7.73399,10.311975 l -4.7877,-0.24552 -18.291475,15.71348 -2.577994,8.22503 -11.416828,8.22502 z").attr({id: 'path38'}).data('id', 'path38');
+box1.node.setAttribute("data-string", "path38");
+parts.push(path38);
+
+var path40 = rsr.path("m 75.130096,68.96268 -0.122762,15.345199 46.894926,4.173894 7.24294,-12.276159 68.62373,5.40151 L 197.5234,80.256747 75.252857,69.453726 Z").attr({id: 'path40'}).data('id', 'path40');
+box1.node.setAttribute("data-string", "path40");
+parts.push(path40);
+
+var path44 = rsr.path("m 75.989427,30.047255 -0.73657,32.286299 0.73657,0.122762 0.491046,4.66494 122.270547,11.416828 28.48069,-28.726213 -1.10485,-24.797842 -6.87465,-0.122761 2.33247,-2.209709 -0.36829,-2.086947 -44.31693,1.473139 -0.49105,-0.122762 -0.85933,-3.560086 c 0,0 -0.24552,-3.928371 -5.27875,-3.805609 -5.03322,0.122761 -16.20453,-0.368285 -16.20453,-0.368285 l -2.33247,1.718662 -6.99741,-5.033225 L 109.99439,9.0550221 76.971519,28.083069 v 2.086947 z").attr({id: 'path44'}).data('id', 'path44');
+box1.node.setAttribute("data-string", "path44");
+parts.push(path44);
+
+
+
+var rsrGroups = [layer1];
+layer1.push(
+path26,
+path28,
+path30,
+path32,
+path34,
+path36,
+path38,
+path40,
+path44
+);

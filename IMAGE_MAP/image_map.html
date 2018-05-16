@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0,minimum-scale=1.0"/>
+    <style type="text/css">
+        body {
+            -webkit-text-size-adjust: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://lokeshdhakar.com/projects/lightbox2/css/lightbox.css">
+    <style>
+        .no-padding{padding:0px;}
+
+        .outer-block {
+            padding-top: 100px;
+        }
+
+        .customa {
+            border: 1px solid red;
+        }
+
+        #lightTrigger {
+            padding: 5px 10px;
+            border: 1px solid #eee;
+            display: block;
+        }
+
+        #lightbox .lb-outerContainer {
+            height: 400px !important;
+            width: 400px !important;
+        }
+
+        #lightbox .lb-container > img {
+            height: 400px !important;
+            width: 400px !important;
+            max-width: 100%;
+        }
+
+        #lightbox .lb-data .lb-caption{
+            font-size: 20px;
+        }
+
+        map[name='lcf-map']{position:absolute;left:0;top:0;width:100%;height:100%;}
+
+        .mapimage{}
+
+        .mfp-block{float:none;margin:0px auto;}
+
+        area.areat{fill: #00628B; fill-color:#00628B; ; fill-opacity: 1;stroke: #7d00cd; -webkit-text-stroke-color: #7ca8d3;}
+    </style>
+    <script src="mfp.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <div class="container">
+
+        <div class="outer-block col-md-12 no-padding hide">
+
+            <div class="map-block col-md-12 no-padding">
+                <a id="lightTrigger" class="example-image-link" href="" data-lightbox="example-set"
+                   data-title=""></a>
+                <img src="images/maxresdefault-825x542.jpg" alt="map_image" width="825" height="542" usemap="#cities">
+            </div><!--MAP-BLOCK-->
+
+            <map name="cities">
+                <area target="" alt="SUN" title="SUN" href="#nogo" data-src="images/spec1.jpg"
+                      coords="512,74,518,81,510,90,516,92,514,99,520,103,519,114,524,111,527,119,533,120,537,115,543,122,549,118,557,118,558,110,567,114,567,106,572,103,575,94,575,84,577,76,569,69,570,61,559,62,556,52,545,55,534,58,518,65,523,56,528,59"
+                      shape="poly">
+
+                <area target="" alt="LOTUS TEMPLE" title="LOTUS TEMPLE" href="#nogo" data-src="images/spec2.jpg"
+                      coords="94,530,91,525,97,517,98,510,98,503,101,499,77,472,110,462,106,444,113,441,120,440,126,440,134,440,119,417,127,412,135,412,144,411,151,412,159,414,168,417,173,421,179,425,188,430,197,436,202,429,206,422,213,416,220,414,225,410,230,407,237,406,248,403,265,423,269,417,280,410,288,403,296,399,303,397,308,394,304,404,300,408,296,414,298,420,305,419,318,430,316,423,322,434,317,439,217,480"
+                      shape="poly">
+
+                <area target="" alt="BUILDING" title="BUILDING WITH ONE LIGHT" href="#nogo" data-src="images/spec3.jpg"
+                      coords="325,389,326,360,334,358,334,268,384,268,404,280,402,384" shape="poly">
+
+                <area target="" alt="HIGHEST TOWER" title="HIGHEST TOWER" href="#nogo" data-src="images/spec4.jpg"
+                      coords="559,397,577,350,616,185,622,180,628,178,639,175,669,102,662,180,674,195,675,204,672,217,645,343,641,354,633,418"
+                      shape="poly">
+
+                <area target="" alt="BROWN TOWER" title="BROWN TOWER" href="#nogo" data-src="images/spec5.jpg"
+                      coords="364,268,365,176,392,177,392,145,407,145,407,137,418,108,433,138,431,146,442,155,443,183,464,193,465,221,475,223,473,263,490,270,490,355,511,355,513,391,491,388,470,388,438,386,404,384,406,278,388,270"
+                      shape="poly">
+            </map>
+
+        </div><!--OUTER-BLOCK-->
+
+        <div class="mfp-block outer-block col-md-5 no-padding">
+
+            <div class="map-block col-md-12 no-padding">
+
+
+                <div id="divMFPImg" class="mapimage col-md-12 no-padding" style="" usemap="mfps">
+                    <div style="position:absolute; left:57px; top:82px; z-index:1;">
+                        <img id="imgFinisher_id" src="images/Alabama_OutputTray.gif" width="78" height="119" usemap="finisher-map">
+                    </div>
+
+                    <map name="finisher-map">
+                        <area target="" alt="" title="Alabama Output Tray" data-src="images/Alabama_OutputTray.gif" href="#NOGO" coords="78,32,42,14,52,13,77,25,78,13,67,8,78,5" shape="poly">
+                    </map>
+
+                    <div style="position:absolute; left:108px; top:40px;">
+                        <img id="imgTray_id" src="images/Alabama_PPC_LCF.gif" width="140" height="160" usemap="lcf-map">
+                    </div>
+
+                    <map name="lcf-map">
+                        <area target="" alt="Alabama PPC Large Capacity Feeder" title="ALABAMA PPC LARGE CAPACITY FEEDER" data-src="images/Alabama_PPC_Large_Capacity_Feeder.gif" href="#nogo" coords="26,107,104,157" shape="rect">
+
+                        <area target="" alt="Alabama PPC LCF DUPLEXER" title="ALABAMA PPC LCF Duplexer" data-src="images/Alabama_PPC_LCF_Duplexer.gif" href="#nogo" coords="104,57,116,107" shape="rect">
+
+                        <area target="" alt="Alabama PPC LCF TONER" title="ALABAMA PPC LCF TONER" onmouseover="this.style.backgroundColor='#000';"  fill="#000" data-src="images/Alabama_PPC_LCF_Toner.gif" href="#nogo" coords="27,73,104,107" shape="rect">
+
+                        <area target="" alt="Alabama PPC LCF CONVEYOR" title="ALABAMA PPC LCF Conveyor" data-src="images/Alabama_PPC_LCF_Conveyor.gif" href="#nogo" coords="116,99,138,105" shape="rect">
+
+                        <area target="" alt="Alabama PPC LCF PANEL" title="ALABAMA PPC LCF PANEL" data-src="images/Alabama_PPC_LCF_Panel.gif" href="#nogo" coords="60,43,94,51" shape="rect">
+
+                        <area target="" class="areat" rel="tag" color="#00628B" onclick="this.style.backgroundColor='#000';" alt="" title="" href="#nogo" coords="20,20,90,0" shape="rect">
+
+                        <!--<path target="" class="areat" fill="#00628B" rel="tag" onclick="this.style.backgroundColor='#000';" alt="" title="" href="#nogo" coords="20,20,90,0" shape="rect"></path>-->
+
+                    </map>
+
+                </div>
+
+            </div><!--MAP-BLOCK-->
+
+        </div><!--MFP-BLOCK-->
+
+        <div class="newMap col-md-12"></div>
+
+    </div><!--CONTAINER-->
+
+</div><!--WRAPPER-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://lokeshdhakar.com/projects/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script src="https://www.vincentbroute.fr/mapael/source/js/jquery.mapael.js"></script>
+<script src="mfp.js"></script>
+
+<script>
+    $(function(){
+        $(".newMap").mapael({
+            map : {
+                name : "mfp",
+                defaultPlot: {
+                    attrs: {
+                        fill: "#004a9b"
+                        , opacity: 0.6
+                    }
+                    , attrsHover: {
+                        opacity: 1
+                    }
+                    , text: {
+                        attrs: {
+                            fill: "#505444"
+                        }
+                        , attrsHover: {
+                            fill: "#000"
+                        }
+                    }
+                }
+                , defaultArea: {
+                    attrs: {
+                        fill: "#f4f4e8"
+                        , stroke: "#ced8d0"
+                    }
+                    , attrsHover: {
+                        fill: "#a4e100"
+                    }
+                    , text: {
+                        attrs: {
+                            fill: "#505444"
+                        }
+                        , attrsHover: {
+                            fill: "#000"
+                        }
+                    }
+                }
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $(".outer-block map area").on("click", function (eve) {
+            var atr = $(this).attr("data-src"),
+                title = $(this).attr("title");
+            console.log($(this).attr("title"));
+
+            $("#lightTrigger").attr("href", atr).attr("data-title", title);
+            $("#lightTrigger").trigger("click");
+
+        });
+    });
+</script>
+</body>
+
+</html>
